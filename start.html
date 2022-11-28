@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="start.css">
+    <title>Xyz Pizza Corporation | Welcome</title>
+  </head>
+  <body class="bg">
+    <img src="title.png" class="title" alt="title"/>
+    <div class="row">
+      <p class="title-color-font">We Serve The Best of the Best Pizza in the
+        World. <br/>Once You have a slice, You can never Stop.</p>
+      </div>
+      <div class="pizza-size">
+        <img src="pizza.png" class="pizza" alt="pizza"/>
+      </div>
+      <div class="btnmove">
+        <a href="main.html"><button type="button"
+            class="padding-width-color-btn">Get Started</button></a>
+        <button id="btm" class="padding-width-color-btn">About Us</button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+      </div>
+      <p class="title-color-font copy">© 2022 Copyright: <b>Xyz-Pizza-Corporation</b></p><br>
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>Xyz Pizza is what every pizza lover's been dreaming of. We make
+                sure to satisfy customers
+                and never let them go home without a big smile.
+              </p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>0969 217 9684</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>laurencegumilao@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Our Services</div>
+            <div><a href="#">Fast and Free Delivered Pizza</a></div>
+            <div><a href="#">Made with Love and Unique Recipe</a></div>
+            <div><a href="#">Include a vast array of Toppings</a></div>
+            <div><a href="#">Healthy Ingredients</a></div>
+            <div><a href="#">Sanitary Foods</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe to us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+            </form>
+          </div>
+        </div>
+      </footer>
+      <script>
+                //js for down
+                document.querySelector("#btm").addEventListener("click", () => {
+                window.scrollTo(0,document.body.scrollHeight);
+                })
+                //javascript for up
+                    let mybutton = document.getElementById("myBtn");
+                    window.onscroll = function() {scrollFunction()};
+
+                    function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                    }
+                    function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                    }
+                </script>
+    </body>
+  </html>

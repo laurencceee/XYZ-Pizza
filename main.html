@@ -1,0 +1,70 @@
+    <html>
+    <head>
+        <title>Xyz Pizza | Order</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/x-icon" href="pizza.png">
+        <script type="text/javascript" src="main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body class="background">
+    <div class="row">
+        <div class="column">
+            <div class="pad-xy-20p">
+                <h3>Contact Information</h3>
+                First Name: <br/><br/>
+                    <input type="text" id="fname" class="input-border-padding pad-xy-10p font-size-14px" placeholder="First Name"   required/><br/><br/>
+                Last Name: <br/><br/>
+                    <input type="text" id="lname" class="input-border-padding pad-xy-10p font-size-14px" placeholder="Last Name"  required/><br/><br/>
+                Address: <br/><br/>
+                    <input type="text" id="Addr" class="input-border-padding pad-xy-10p font-size-14px" placeholder="Address"required/><br/><br/>
+                Phone: <br/><br/>
+                    <input type="text" id="Contact1" class="input-border-padding pad-xy-10p font-size-14px" placeholder="Contact (maximum of 11)" maxlength="11"  /><br/><br/>
+                Email Address: <br/><br/>
+                    <input type="email" id="Email1" class="input-border-padding pad-xy-10p font-size-14px" placeholder="Email Address" /><br/><br/>
+            </div>
+        </div>
+        <div class="column">
+            <div class="pad-xy-20p">
+                <h3>Order</h3>
+                Quantity: <br/><br/>
+                <input type="number" min="1" max="300" class="text-align-center input-border-padding pad-xy-10p" id="quantitymo" placeholder="Quantity"  value="0"/><br/>
+                <div class="radio">
+                    <h3>Select Size:</h3>
+                    Small 10: 
+                    <input type="radio" name="size" id="size1" placeholder="Small" /><br/><br/>
+                    Medium 12: 
+                    <input type="radio" name="size" id="size2" placeholder="Medium" /><br/><br/>
+                    Large 15: 
+                    <input type="radio" name="size" id="size3" placeholder="Large" /><br/>
+                </div>
+                <div class="check">
+                    <h3>Toppings:</h3>
+                    <input type="checkbox" id="toppings1"/>Ham and Cheese<br/><br/>
+                    <input type="checkbox" id="toppings2"/>Double Cheese<br/><br/>
+                    <input type="checkbox" id="toppings3"/>Pepperoni<br/><br/>
+                </div>
+                <div class="submit">
+                    <input type="submit" id="sub" class="btn-sub-reset pad-xy-10p " value="Order" onclick="GetInfo();"/>
+                    <div class="divide">
+                        <input type="reset" class="btn-sub-reset pad-xy-10p" id="reset" value="Reset"/><br/><br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="outs text-align-center pad-xy-20p">
+                ================================<br>
+                RECEIPT <br>
+                ================================<br>
+                <span id="result1"></span><br/>
+                <span id="bilang"></span><br/><br>
+                <span id="result2"></span><br><br>
+                <span id="total"></span><br/>
+                <span id="final"></span><br/>
+                ================================<br>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
